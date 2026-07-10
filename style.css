@@ -3,18 +3,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #0d0442;
 }
  
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   color: #000000;
-  background-color: #ffffff;
 }
  
 /* ===== HEADER ===== */
 header {
-  background-color: #383737;
   color: white;
   padding: 30px 40px;
   text-align: center;
@@ -34,18 +33,19 @@ main {
  
 h2 {
   color: #1A3A5C;
-  border-bottom: 2px solid #1A73E8;
-  padding-bottom: 8px;
+  border-bottom: 1px solid #1A73E8;
+  padding: 10px;
+  padding-bottom: 10px;
   margin: 15px 0;
 }
  
 /* ===== CARTES COMPETENCES ===== */
 .competence {
-  background: white;
+  background: rgba(128, 128, 128, 0.445);
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.315);
 }
 
 /* ===== TABLE ===== */
