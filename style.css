@@ -1,3 +1,7 @@
+:root {
+  --bg-card: #131e30;
+}
+
 /* ===== REINITIALISATION ET BASE ===== */
 * {
   margin: 0;
@@ -35,7 +39,6 @@ main {
 }
  
 h2 {
-  border-bottom: 1px solid #000000;
   padding: 10px;
   padding-bottom: 10px;
   margin: 15px 0;
@@ -80,7 +83,8 @@ tr:nth-child(odd) {
 
 /* ===== FOOTER ===== */
 footer {
-  background-color: #2c0686;
+  border-bottom: 1px solid rgba(red, green, blue, alpha);
+  background-color: #2c068600;
   text-align: center;
 }
 
