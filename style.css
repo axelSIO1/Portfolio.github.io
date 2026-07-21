@@ -44,8 +44,12 @@ h2 {
   padding: 5px;
   margin-right: 300px;
   border-bottom: 1px solid white;
+  border
 }
 
+main p {
+  font-size: 23px;
+}
 #tech_skill {
   border-bottom: none;
 }
@@ -108,4 +112,8 @@ nav a:hover {
 header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background-color: rgb(27, 27, 68);
+}
+
+h4 {
+  font-size: 27px;
 }
