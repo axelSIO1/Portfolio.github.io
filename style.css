@@ -20,7 +20,6 @@ body {
  
 /* ===== HEADER ===== */
 header {
-
   padding: 30px 40px;
   text-align: center;
   background: #1a2847;
@@ -34,22 +33,19 @@ header h1 {
 /* ===== CONTENU PRINCIPAL ===== */
 main {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 40px 0 40px 40px;
   padding: 0 20px;
-}
- 
-h2 {
-  padding: 10px;
-  padding-bottom: 10px;
-  margin: 15px 0;
+  font-size: 20px;
 }
 
-main h2 {
+h2 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 5px;
+  margin-right: 300px;
   border-bottom: 1px solid white;
-  padding: 10px;
-  padding-bottom: 10px;
-  margin: 15px 0;
 }
+
  
 /* ===== CARTES COMPETENCES ===== */
 .competence {
@@ -80,7 +76,6 @@ tr:nth-child(odd) {
   }
 
 
-
 /* ===== FOOTER ===== */
 footer {
   border-bottom: 1px solid rgba(red, green, blue, alpha);
@@ -88,8 +83,8 @@ footer {
   text-align: center;
 }
 
-.page-unique h2 {
-  font-size: 30px;
+h2 {
+
   font-weight: bold;
   padding: 5px;
   margin-right: 300px;
