@@ -46,6 +46,9 @@ h2 {
   border-bottom: 1px solid white;
 }
 
+#tech_skill {
+  border-bottom: none;
+}
  
 /* ===== CARTES COMPETENCES ===== */
 .competence {
@@ -68,12 +71,6 @@ td, th {
     border: 2px solid black;
     padding: 8px;
 }
-tr:nth-child(even) {
-    background-color: #6d70ffbe;
-}
-tr:nth-child(odd) {
-    background-color: white;
-  }
 
 
 /* ===== FOOTER ===== */
@@ -83,12 +80,6 @@ footer {
   text-align: center;
 }
 
-h2 {
-
-  font-weight: bold;
-  padding: 5px;
-  margin-right: 300px;
-}
 
 nav {
   margin-top: 15px;
