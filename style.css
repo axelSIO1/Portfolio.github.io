@@ -1,6 +1,6 @@
 :root {
-  --bg: rgb(29, 33, 44);
-  --bg-card: rgb(82, 82, 105);
+  --bg: rgb(28, 28, 36);
+  --bg-card: rgb(28, 28, 34);
   --blue: #2563eb;
   --blue-light: #1477d3;
   --purple: #7c3aed;
@@ -30,6 +30,7 @@ header {
   padding: 30px 40px;
   text-align: center;
   background: var(--bg-card);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
  
 header h1 {
@@ -113,11 +114,6 @@ nav a {
  
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
-}
-
-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background-color: rgb(27, 27, 68);
 }
 
 h4 {
