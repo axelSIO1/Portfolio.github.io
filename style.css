@@ -1,6 +1,12 @@
 :root {
   --bg: rgb(29, 33, 44);
   --bg-card: rgb(82, 82, 105);
+  --blue: #2563eb;
+  --blue-light: #1477d3;
+  --purple: #7c3aed;
+  --green: #10b981;
+  --green-light: #34d399;
+  --yellow: #fbbf24;
 }
 
 /* ===== REINITIALISATION ET BASE ===== */
@@ -119,15 +125,13 @@ h4 {
 }
 
 .code-card {
-  border: 1px soild rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 14px;
   overflow: hidden;
   width: 100%;
   max-width: 560px;
   height: auto;
   box-shadow: 0 20px 50px rgba(0,0,0,.4);
-  display: flex;
-  justify-content: flex-end;
 }
 
 div {
@@ -147,3 +151,22 @@ div {
   min-width: 0; /* évite que le texte pousse le layout si le texte est long */
 }
 
+.c-keyword {
+    color: #c084fc;
+}
+
+.c-class {
+    color: var(--blue-light);
+}
+
+.c-fn {
+    color: #34d399;
+}
+
+.c-prop {
+    color: var(--text-dim);
+}
+
+.c-string {
+    color: #fbbf24;
+}
