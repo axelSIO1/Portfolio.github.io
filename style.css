@@ -8,12 +8,12 @@
   --green-light: #34d399;
   --yellow: #ff9100;
   --orange: rgb(255, 125, 0);
+  --border: rgba(255, 255, 255, 0.08);
 }
 
 /* ===== REINITIALISATION ET BASE ===== */
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   color: white;
 
@@ -31,7 +31,7 @@ header {
   padding: 30px 40px;
   text-align: center;
   background: var(--bg-card);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid var(--border);
 }
  
 header h1 {
@@ -64,8 +64,9 @@ main p {
   background: rgba(128, 128, 128, 0.445);
   border-radius: 8px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.315);
+  max-width: 1000px;
 }
 
 /* ===== TABLE ===== */
@@ -87,6 +88,9 @@ footer {
   border-bottom: 1px solid rgba(red, green, blue, alpha);
   background-color: #2c068600;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 
@@ -211,3 +215,98 @@ div {
   color: var(--orange);
   
 }
+
+.parcours {
+  border-radius: 14px;
+  background-color: rgba(128, 128, 128, 0.144);
+  max-width: 1300px;
+  align-items: center;
+  margin:auto;
+}
+
+.parcours .parcours-title {
+  border-bottom: 2px solid var(--border);
+  display: flex;
+  justify-content: center;
+}
+
+.timeline {
+  position: relative;
+  padding: 40px 0;
+}
+
+/* La ligne verticale centrale */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  bottom: 50px;
+  width: 2px;
+  background: var(--blue);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+  gap: 80px;
+}
+
+.timeline-item.left {
+  justify-content: flex-start;
+}
+
+.timeline-item.left .timeline-text {
+  margin-left: 30px;
+  margin-right: 35px;
+}
+
+.timeline-item.left .timeline-img {
+  padding-right: 5px;
+}
+
+.timeline-item.right {
+  justify-content: flex-end;
+}
+
+.timeline-item.right .timeline-text {
+  margin-right: 100px;
+}
+
+.timeline-item.right .timeline-img {
+  padding: 35px;
+  margin: ;
+}
+.timeline-text {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 40px;
+  background: rgba(255,255,255,0.03);
+  width: calc(50% - 40px);
+}
+
+.timeline-img {
+  width: calc(50% - 40px);
+}
+
+.timeline-img img{
+  width: 550px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.timeline-text h3 {
+  color: var(--orange);
+}
+
+.timeline-text .date {
+  color: var(--blue);
+}
+
+
