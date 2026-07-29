@@ -8,7 +8,7 @@
   --green-light: #34d399;
   --yellow: #ff9100;
   --orange: rgb(255, 125, 0);
-  --border: rgba(255, 255, 255, 0.08);
+  --border: rgb(88, 38, 15);
 }
 
 /* ===== REINITIALISATION ET BASE ===== */
@@ -31,7 +31,7 @@ header {
   padding: 30px 40px;
   text-align: center;
   background: var(--bg-card);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 2px solid var(--border);
 }
  
 header h1 {
@@ -309,4 +309,53 @@ div {
   color: var(--blue);
 }
 
+.skills-box {
+    border: 3px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    padding: 15px;
+    transition: all 0.3s ease;
+    background-color: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
 
+.skills-box .Box-title {
+  color: var(--blue-light);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.skills-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+}
+
+.skills-tag {
+  background-color:rgba(53, 21, 3, 0.582) ;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 35px;
+    border: 3px solid var(--border);
+    border-radius: 10px;
+    font-size: 24px;
+    transition: all 0.2s ease;
+}
+
+.skills-tag:hover {
+  background: rgba(0, 212, 255, 0.18);
+}
+
+.skill-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
