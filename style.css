@@ -8,6 +8,7 @@
   --green-light: #34d399;
   --yellow: #ff9100;
   --orange: rgb(255, 125, 0);
+  --red: rgb(255, 0, 0);
   --border: rgb(88, 38, 15);
 }
 
@@ -244,7 +245,7 @@ div {
   top: 50px;
   bottom: 50px;
   width: 2px;
-  background: var(--blue);
+  background: linear-gradient(180deg, transparent, var(--yellow), var(--red), transparent);
   transform: translateX(-50%);
 }
 
@@ -290,7 +291,7 @@ div {
 }
 
 .timeline-img {
-  width: calc(50% - 40px);
+  width: calc(50% - 30px);
 }
 
 .timeline-img img{
@@ -319,6 +320,7 @@ div {
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease;
+    gap: 15px;
 }
 
 .skills-box .Box-title {
