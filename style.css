@@ -10,6 +10,7 @@
   --orange: rgb(255, 125, 0);
   --red: rgb(255, 0, 0);
   --border: rgb(88, 38, 15);
+  --border-black: grey;
 }
 
 /* ===== REINITIALISATION ET BASE ===== */
@@ -341,14 +342,14 @@ div {
 
 .skills-tag {
   background-color:rgba(53, 21, 3, 0.582) ;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 35px;
-    border: 3px solid var(--border);
-    border-radius: 10px;
-    font-size: 24px;
-    transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 35px;
+  border: 3px solid var(--border);
+  border-radius: 10px;
+  font-size: 24px;
+  transition: all 0.2s ease;
 }
 
 .skills-tag:hover {
@@ -356,8 +357,48 @@ div {
 }
 
 .skill-icon {
-  width: 20px;
-  height: 20px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
   flex-shrink: 0;
+}
+
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+.mailto {
+  background: linear-gradient(135deg, #f97a1f, #eb4763);
+  font-weight: 500;
+  display: flex;
+  align-items: center;   /* centre verticalement icône + texte */
+  gap: 12px;
+  border: 2px solid var(--border);
+  border-radius: 14px;
+  padding: 12px 20px;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.tel {
+  font-weight: 500;
+  display: flex;
+  align-items: center;   /* centre verticalement icône + texte */
+  gap: 12px;
+  border: 2px solid var(--border-black);
+  border-radius: 14px;
+  padding: 12px 20px;
+  width: fit-content;
+  text-decoration: none;
+  color: white;
 }
